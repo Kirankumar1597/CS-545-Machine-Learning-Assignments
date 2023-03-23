@@ -28,7 +28,7 @@ class Optimizers():
 ######################################################################
 
     def sgd(self, error_f, gradient_f, fargs=[], n_epochs=100,
-            learning_rate=0.001, verbose=False, error_convert_f=None,
+            learning_rate=0.001, verbose=True, error_convert_f=None,
             nesterov=False, callback_f=None):
         '''
         error_f: function that requires X and T as arguments (given in fargs)
